@@ -4,9 +4,13 @@
 **Description**
 
   👉 This Furniture and Home Decor Marketplace is for users to view furniture and home Appliances. 
+  
   👉 The users can check products availability for furniture and explore marketplace.
+  
   👉 The user can add products cart orders and that order status will be changed by admin.
+  
   👉 The admin can Add/Edit/Delete categories and  vendor can Add/Edit/Delete products for users and all thier bookings seen by admin.
+  
   👉 The datas are dynamically stored and retrived from the database.
 
 
