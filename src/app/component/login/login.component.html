@@ -1,0 +1,92 @@
+<section class="vh-100" id="login">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="col-6">
+        <ng-lottie [options]="options"></ng-lottie>
+      </div>
+      <div class="col-6">
+     
+        <p class="fs-3 text-uppercase text-decoration-underline">Login Page</p>
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+          <!-- Username input -->
+          <label class="d-flex align-items-start mb-2 fs-4"
+            >username</label
+          >
+          <div class="form-floating mb-5">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              name="username"
+              [(ngModel)]="username"
+              minlength="3"
+              maxlength="15"
+              #UserNamevaild="ngModel"
+              [ngClass]="
+                UserNamevaild.invalid && UserNamevaild.dirty
+                  ? 'is-invalid '
+                  : ''
+              "
+            />
+            <div *ngIf="UserNamevaild.invalid" class="invalid-feedback">
+              please enter the username min 3 characters
+            </div>
+           
+            <label for="floatingInput">username</label>
+          </div>
+          <!-- Password input -->
+          <label class="d-flex align-items-start mb-2 fs-4">Password*</label>
+          <div class="form-floating mb-5">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingInput"
+              name="password"
+              [(ngModel)]="password"
+              minlength="3"
+              maxlength="15"
+              #passwordvaild="ngModel"
+              [ngClass]="
+              passwordvaild.invalid && passwordvaild.dirty
+                  ? 'is-invalid '
+                  : ''
+              "
+            />
+            <div *ngIf="passwordvaild.invalid" class="invalid-feedback">
+              please enter the password min 3 characters
+            </div>
+            
+            <label for="floatingInput">Password</label>
+          </div>
+ 
+          <p
+            class="error"
+            [ngClass]="error.length > 0 ? 'visible' : 'invisible'"
+          >
+            {{ error }}
+          </p>
+ 
+          <div class="d-flex align-items-center mb-4">
+            <span>Not registered?</span>
+            <a
+              routerLink="/register"
+              class="text-primary text-decoration-none px-2"
+              >Register here</a
+            >
+          </div>
+ 
+          <!-- Submit button -->
+          <div class="d-grid gap-2">
+            <button
+              type="submit"
+              class="btn btn-primary d-flex justify-content-center align-items-center fs-4 w-100 gap-2 my-5 p-3"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 

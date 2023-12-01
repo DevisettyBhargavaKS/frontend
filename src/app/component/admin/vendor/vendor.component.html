@@ -1,0 +1,123 @@
+<!-- <div class="d-flex justify-content-end">
+  <button
+    type="button"
+    class="btn btn-primary my-5"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
+    Add Vendor
+  </button>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">vendor</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          aria-placeholder="title"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form #vendorForm="ngForm" (ngSubmit)="onSubmit(vendorForm)">
+          <div class="mb-3">
+            <label class="form-label">vendor Id</label>
+            <input
+              type="hidden"
+              class="form-control"
+              id="name"
+              aria-describedby="nameHelp"
+              placeholder="vendor Id"
+              name="name"
+              ngModel
+              required
+              minlength="3"
+              maxlength="15"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">vendor title</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="vendor name"
+              id="username"
+              name="username"
+              ngModel
+              required
+              [(ngModel)]="username"
+              minlength="3"
+              maxlength="15"
+              #UserNamevaild="ngModel"
+              [ngClass]="
+                UserNamevaild.invalid && UserNamevaild.dirty
+                  ? 'is-invalid '
+                  : ''
+              "
+            />
+            <div *ngIf="UserNamevaild.invalid" class="invalid-feedback">
+              please enter the vendorname min 3 characters
+            </div>
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">VendorName</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vendores of vendor">
+      <th scope="row">{{ vendores.id }}</th>
+      <td>{{ vendores.username }}</td>
+    </tr>
+  </tbody>
+</table> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vendor List - Admin Page</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Vendor List - Admin Page</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">VendorName</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vendores of vendor">
+            <th scope="row">{{ vendores.id }}</th>
+            <td>{{ vendores.username }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

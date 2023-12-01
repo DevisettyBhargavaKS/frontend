@@ -1,0 +1,538 @@
+<style>
+  /*-------------- Google fonts ---------------*/
+  @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap");
+
+  :root {
+    /*-------- font-family --------*/
+    --heading-font: "PT Serif", serif;
+    --para-font: "Outfit", sans-serif;
+
+    /*-------- Colors ----------*/
+    --primary-color: #dd9d4c; /*-- Light brown color ---*/
+    --secondary-color: #dde9ec; /*-- light black color --*/
+    --body-color: #f6f1ed; /*-- Extra light pink color --*/
+    --white-color: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background-color: var(--body-color);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .heading {
+    font-size: 8.5vw;
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .para-line {
+    color: var(--secondary-color);
+    font-size: 5.5vw;
+    font-weight: 300;
+    font-family: var(--para-font);
+    padding-top: 5px;
+  }
+
+  .btn {
+    color: #0f0f0f;
+    background-color: var(--primary-color);
+    font-family: var(--para-font);
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: 0.7rem 3.2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: translateY(-5rem);
+  }
+
+  /*----------- Header styling start ------------*/
+  .header {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(237, 196, 196, 0.6),
+        rgba(7, 4, 0, 0.2)
+      ),
+      url(https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?cs=srgb&dl=pexels-lisa-fotios-1090638.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .header .container {
+    padding: 2rem 1rem;
+    padding-left: 10px;
+  }
+
+  .logo {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-family: var(--para-font);
+    font-weight: 600;
+  }
+
+  .hero-content {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero-content .main-heading {
+    color: var(--white-color);
+    font-size: 13vw;
+    font-weight: 300;
+    line-height: 1;
+    font-family: var(--heading-font);
+    margin-bottom: 2.8rem;
+    padding-bottom: 50px;
+  }
+  /*----------- Header styling ends ------------*/
+
+  /*------------ Crafted section styling start --------------*/
+  .craft .container {
+    padding: 3rem 1rem;
+  }
+
+  .craft .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  /*------------ Crafted section styling end --------------*/
+
+  /*------------ products section styling start -------------*/
+  .products .container {
+    padding: 3rem 1rem;
+  }
+
+  .products .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .products .container .row .col {
+    width: 100%;
+  }
+
+  .product .product-img,
+  .product .name {
+    cursor: pointer;
+  }
+
+  .product .product-img {
+    width: 100%;
+  }
+
+  .product .name {
+    font-size: 7vw;
+    font-family: var(--para-font);
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  /*------------ products section styling end -------------*/
+
+  /*------------ Portfolio section styling start ----------*/
+  .portfolios .container {
+    padding: 3rem 1rem;
+  }
+
+  .portfolios .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .portfolios .name {
+    font-size: 6vw;
+    font-weight: 500;
+    font-family: var(--para-font);
+  }
+  /*------------ Portfolio section styling end ----------*/
+
+  /*------------ Footer section styling start ----------*/
+  .footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(7, 4, 0, 0.2)),
+      url(../../../assets/footer-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .container {
+    padding: 6rem 1rem;
+  }
+
+  .footer .container .heading {
+    color: #fff;
+  }
+
+  .footer .container .row {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer .container .row .col {
+    width: 100%;
+  }
+
+  .footer-heading {
+    color: #fff;
+    font-size: 6vw;
+    font-family: var(--heading-font);
+  }
+
+  .white {
+    color: #ffffff;
+  }
+  /*------------ Footer section styling end ----------*/
+
+  /*----------------------------------------------------------*/
+  /*-------------------- Desktop size styling ----------------*/
+  /*----------------------------------------------------------*/
+  @media screen and (min-width: 768px) {
+    .heading {
+      font-size: 3.6vw;
+    }
+
+    .para-line {
+      font-size: 1.6vw;
+      font-weight: 300;
+      padding-top: 10px;
+      font-family: var(--para-font);
+    }
+
+    /*------ header styling start -------*/
+    .header .container {
+      padding: 4.5rem 6rem;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      line-height: 0.9;
+    }
+
+    .hero-content .main-heading {
+      font-size: 7vw;
+    }
+    /*------ header styling end -------*/
+
+    /*------ craft styling start -------*/
+    .craft {
+      height: 100vh;
+    }
+
+    .craft .container {
+      padding: 5rem;
+    }
+
+    .craft .container .row {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5.5rem;
+    }
+
+    .craft .container .row .col {
+      width: 100%;
+    }
+    .craft .container .row .col .crafted-img {
+      border-radius: 10px;
+    }
+    /*------ craft styling end -------*/
+
+    /*------ products styling start -------*/
+    .products {
+      height: 100vh;
+      border-radius: 10px;
+    }
+
+    .products .container {
+      padding: 5rem;
+    }
+
+    .products .container .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    .products .container .row .col .heading {
+      font-size: 3vw;
+    }
+
+    .product {
+      transition: 0.5s;
+    }
+
+    .product:hover {
+      transform: translateY(-5rem);
+    }
+
+    .product .name {
+      font-size: 1.4vw;
+      padding-top: 10px;
+    }
+    /*------ products styling end -------*/
+
+    /*------ Portfolio styling start --------*/
+    .portfolios .container {
+      padding: 5rem;
+    }
+
+    .portfolios .container .row {
+      margin-top: 2rem;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 28px;
+    }
+
+    .portfolios .name {
+      font-size: 1.6vw;
+      padding-top: 10px;
+    }
+
+    .portfolio-img {
+      width: 100%;
+      border-radius: 50px;
+    }
+    /*------ Portfolio styling end --------*/
+
+    /*------ Footer styling start ---------- */
+    .footer {
+      height: 100vh;
+      background-position: center center;
+    }
+
+    .footer .container {
+      padding: 5rem;
+      width: 100%;
+    }
+
+    .footer .container .row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer-heading {
+      font-size: 1.2vw;
+    }
+
+    .white {
+      font-size: 1.5vw;
+    }
+    /*------ Footer styling end ---------- */
+  }
+</style>
+<!-- <Html></Html> -->
+<body>
+  <!-- Header starts from here -->
+  <section class="header">
+    <div class="container">
+      <div class="logo">Home Decor & <br />Furniture</div>
+
+      <div class="hero-content">
+        <h2 class="main-heading">Handmade for <br />your home</h2>
+
+        <a class="blink" routerLink="/product"> <b>Shop</b></a>
+      </div>
+    </div>
+  </section>
+  <!-- Header ends from here -->
+
+  <!-- Craft section start -->
+  <section class="craft">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="heading">Consciously Crafted</h2>
+          <p class="para-line">
+            Handmade and made-to-measure, each piece from Custom & Nooke is
+            personal and unlike any other. Inspired by the clean lines, cozy
+            feel, and monochromatic palette of a modern minimalist home, we
+            ensure every single piece reflects the passion and craftsmanship we
+            spent years developing and perfecting.
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="../../../assets/crafted-chair.png"
+            alt="crafted chair"
+            class="crafted-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Craft section ends -->
+
+  <!-- products section start -->
+  <section class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="heading">Thoughtful <br />& Functional</h2>
+          <a class="blink" routerLink="/product"><b>View Products</b></a>
+        </div>
+
+        <div class="col">
+          <div class="product">
+            <img
+              src="../../../assets/product-img-1.png"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="name">Stoneware</h5>
+            <p class="para-line">
+              Artisanal designs that make every day a feast
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <img
+              src="../../../assets/product-img-2.png"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="name">Furniture</h5>
+            <p class="para-line">
+              Casual yet sophisticated pieces for every room in the house
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <img
+              src="../../../assets/product-img-3.png"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="name">Decor</h5>
+            <p class="para-line">
+              Tasteful elements to mix and match for an elevated look
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- products section ends -->
+
+  <!-- Portfolio section start -->
+  <section class="portfolios">
+    <div class="container">
+      <h2 class="heading">Loved by <br />Homeowners</h2>
+
+      <div class="row">
+        <div class="col">
+          <div class="portfolio">
+            <img
+              src="../../../assets/portfolio-img-1.png"
+              alt=""
+              class="portfolio-img"
+            />
+            <h5 class="name">Wooden Dining Table</h5>
+            <p class="para-line description">
+              Traditional dining table styles usually feature ornate detailing
+              like fluted or turned legs, wood carvings, and dark solid wood
+              finishes.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="portfolio">
+            <img
+              src="../../../assets/portfolio-img-2.png"
+              alt=""
+              class="portfolio-img"
+            />
+            <h5 class="name">Sofa</h5>
+            <p class="para-line description">
+              Long upholstered seat usually with arms and a back and often
+              convertible into a bed.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="portfolio">
+            <img
+              src="../../../assets/portfolio-img-3.png"
+              alt=""
+              class="portfolio-img"
+            />
+            <h5 class="name">Study Table</h5>
+            <p class="para-line description">
+              A study table is one that is designed and built keeping students
+              in mind. Since it is built with the purpose of studying kept in
+              mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio section ends -->
+
+  <!-- footer section start -->
+  <section class="footer">
+    <div class="container">
+      <h2 class="heading">Inquire about a <br />furniture</h2>
+
+      <div class="row">
+        <div class="col">
+          <h4 class="footer-heading">Mailing Address</h4>
+          <p class="para-line white">Siruseri, Chennai, Tamil Nadu, India</p>
+        </div>
+        <div class="col">
+          <h4 class="footer-heading">Email Address</h4>
+          <p class="para-line white">homedecor@gmail.com</p>
+        </div>
+        <div class="col">
+          <h4 class="footer-heading">Phone Number</h4>
+          <p class="para-line white">+91-8688198008</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section ends -->
+</body>

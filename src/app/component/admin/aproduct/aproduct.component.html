@@ -1,0 +1,52 @@
+<!-- <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of aproduct">
+        <th scope="row">{{ product.id }}</th>
+        <td>{{ product.title }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{product.price }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin Page</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Product List - Admin Page</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of aproduct">
+            <th scope="row">{{ product.id }}</th>
+            <td>{{ product.title }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!-- <div class="row">
+  <div class="col-6">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">UserName</th>
+          <th scope="col">createdAt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let user of userDetails"
+          (click)="setSelectedUser(user)"
+          [ngClass]="user.id === userDetail.id ? 'table-primary' : ''"
+        >
+          <th scope="row">{{ user.id }}</th>
+          <td>{{ user.name }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.createdAt }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-6">
+    <p> <b>User's Address</b></p>
+    <div class="" *ngFor="let address of userDetail.addressList">
+      <div>
+        <p> 1) Area = {{ address.address }}</p>
+      </div>
+      <div>
+        <p>  2) City = {{ address.city }}</p>
+      </div>
+      <div>
+        <p> 3) Pincode = {{ address.zipcode }}</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h2>User List</h2>
+      <div class="col-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">UserName</th>
+              <th scope="col">createdAt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let user of userDetails"
+              (click)="setSelectedUser(user)"
+              [ngClass]="user.id === userDetail.id ? 'table-primary' : ''"
+            >
+              <th scope="row">{{ user.id }}</th>
+              <td>{{ user.name }}</td>
+              <td>{{ user.username }}</td>
+              <td>{{ user.createdAt }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-6">
+        <p><b>User's Address</b></p>
+        <div class="" *ngFor="let address of userDetail.addressList">
+          <div>
+            <p>1) Area = {{ address.address }}</p>
+          </div>
+          <div>
+            <p>2) City = {{ address.city }}</p>
+          </div>
+          <div>
+            <p>3) Pincode = {{ address.zipcode }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

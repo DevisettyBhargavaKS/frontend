@@ -1,1 +1,200 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+:root {
+  --primary-50: rgb(219, 252, 252);
+  --primary-100: #95e4f8;
+  --primary-300: #579baa;
+  --primary-500: black;
+  --primary-600: #007bff;
+  --primary-700: #303133;
+  --primary-900: #cddeff;
+  --secondary-100: #e3c1c1;
+  --secondary-500: #64748b;
+  --secondary-900: #0f172a;
+  --red-100: #fee2e2;
+  --red-300: #a5e5fc;
+  --red-500: grey;
+  --red-700: #1c7db9;
+  --green-300: #bef264;
+  --green-500: #84cc16;
+  --green-700: #4d7c0f;
+  --border-radius: 4px;
+}
+ 
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: var(--primary-50);
+}
+ 
+div.login,
+div.register {
+  background-image: url('https://images.unsplash.com/photo-1643123158251-3a66f53a4635?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+/* text */
+.text-primary {
+  color: var(--primary-500) !important;
+}
+ 
+/* background */
+.bg-primary {
+  background-color: var(--primary-600) !important;
+}
+ 
+/* button */
+.btn {
+  border-radius: var(--border-radius);
+}
+ 
+.btn-primary {
+  color: var(--secondary-100);
+  background: var(--primary-500);
+  border: none;
+}
+ 
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: var(--secondary-100);
+  background: var(--primary-600) !important;
+  border: none;
+}
+ 
+.btn-danger {
+  color: var(--secondary-100);
+  background: var(--red-500);
+  border: none;
+}
+ 
+.btn-danger:hover {
+  color: var(--secondary-100);
+  background: var(--red-700);
+  border: none;
+}
+ 
+.btn-success {
+  color: var(--secondary-100);
+  background: var(--red-500);
+  border: none;
+}
+.btn-info {
+  color: #000;
+  background-color:#2cc42c 
+}
+ 
+.btn-success:hover {
+  color: var(--secondary-100);
+  background: var(--red-700);
+  border: none;
+}
+ 
+/* form */
+.login-form-container,
+.navbar,
+.sidebar {
+  background: rgba(255, 255, 255, 0.15); /* Glassmorphism background */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Border for glass effect */
+  border-radius: 10px;
+  padding: 20px;
+  transition: background 0.3s ease-in-out; /* Smooth transition on hover */
+}
+ 
+.login-form-container:hover,
+.navbar:hover,
+.sidebar:hover {
+  background: rgba(255, 255, 255, 0.25); /* Change background on hover */
+}
+ 
+.form-control,
+.form-control:focus {
+  color: rgb(14, 13, 13);
+  background-color: rgba(255, 255, 255, 0.1); /* Glassmorphism input background */
+  border-color: rgba(255, 255, 255, 0.25); /* Border color for input */
+  border-width: 2px;
+  border-radius: 8px;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--primary-300);
+}
+ 
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+}
+ 
+.form-control:hover::placeholder {
+  color: rgb(13, 13, 13);
+}
+ 
+.form-label {
+  color: rgb(8, 8, 8);
+}
+ 
+/* Custom */
+.error {
+  background-color: var(--red-100);
+  margin: 8px 0px;
+  padding: 2px 6px;
+  display: block;
+  color: var(--red-700);
+  border-radius: 8px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+ 
+.border {
+  border-right-color: var(--primary-300) !important;
+}
+ 
+/* background color */
+.bg-body-tertiary {
+  background-color: var(--primary-100) !important;
+}
+ 
+/* Sidebar item styles */
+.sideBarItem {
+  transition: background 0.3s ease-in-out; /* Smooth transition on hover */
+}
+ 
+.sideBarItem:hover {
+  background: rgba(255, 255, 255, 0.25); /* Change background on hover */
+}
+ 
+/* Icon */
+.fa-solid {
+  color: var(--primary-300);
+}
+ 
+.loader {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: 0.5;
+  background-color: #000;
+  z-index: 99;
+  left: 0;
+  top: 0;
+}
+ 
+.lottie-loader {
+  width: 150px !important;
+  height: 150px !important;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+ 
+* {
+  border-radius: 0 !important;
+}
+ 
+.sharp-container {
+  border-radius: 0 !important;
+}
+ 
+.sidebar {
+  border-radius: 0 !important;
+}

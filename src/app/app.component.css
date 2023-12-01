@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap');
+ 
+  #space {
+    padding-left: 0;
+  }
+ 
+  .navbar-brand {
+    flex: 1;
+    text-align: center;
+  }
+ 
+  #brand {
+    color: #c8f7f9;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+ 
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .navbar-nav i {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    padding: 10px 12px;
+  }
+  .navbar-nav i:hover {
+    color: white;
+  }
+ 
+  .categories {
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #a5fcf3;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+ 
+  .categories span {
+    margin-right: 20px;
+  }
+  .categories span:hover {
+    color: white;
+  }
