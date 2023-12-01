@@ -58,6 +58,8 @@
 **Repository Link**
 
     🔗 Repo link -
+    Backend-->https://github.com/DevisettyBhargavaKS/homedecor-backend
+    Frotend-->https://github.com/DevisettyBhargavaKS/frontend
 
 
 **MySQL Schema**
@@ -69,6 +71,7 @@
 Demo Video Url
   
     🔗 url of demo video
+    https://drive.google.com/file/d/1dB8CDCZCeLLhAba2L3qfPmNuZhutlobT/view?usp=sharing
   
   
   
