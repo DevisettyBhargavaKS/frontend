@@ -1,27 +1,75 @@
-# Frontend
+ **Furniture and Home Decor Marketplace**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
-## Development server
+**Description**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  👉 This Furniture and Home Decor Marketplace is for users to view furniture and home Appliances. 
+  
+  👉 The users can check products availability for furniture and explore marketplace.
+  
+  👉 The user can add products cart orders and that order status will be changed by admin.
+  
+  👉 The admin can Add/Edit/Delete categories and  vendor can Add/Edit/Delete products for users and all thier bookings seen by admin.
+  
+  👉 The datas are dynamically stored and retrived from the database.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Credentials**
 
-## Build
+    👉 Role --user
+        📧Username = "user" | 🔐Password = "user"
+    👉 Role --admin
+        📧Username = "admin" | 🔐Password = "admin"
+    👉 Role --vendor
+        📧Username = "vendor" | 🔐Password = "vendor"
+**Technologies used**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    👉 '💻-Spring Boot Java' for Back end
+    👉 '💻-Angular' for Front end 
+    👉 '🗃️-MySql' for Database 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Screenshots**
 
-## Running end-to-end tests
+![Angular16ShoppingRestApi - Profile 1 - Microsoft​ Edge 01-12-2023 15_16_23](https://github.com/DevisettyBhargavaKS/Furniture-Backend/assets/145537696/c5f4bf62-d8d3-488c-8de6-9272b2107f7a)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Angular16ShoppingRestApi - Profile 1 - Microsoft​ Edge 01-12-2023 15_17_52](https://github.com/DevisettyBhargavaKS/Furniture-Backend/assets/145537696/3384eed2-8be9-4e2f-90b6-844a2d723106)
 
-## Further help
+![Angular16ShoppingRestApi - Profile 1 - Microsoft​ Edge 01-12-2023 15_18_17](https://github.com/DevisettyBhargavaKS/Furniture-Backend/assets/145537696/4854150e-49f5-4758-b563-13d515c8a698)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Challenges**
+
+    🔴 Faced challenges in creating and mapping the enitites.
+    🔴 While integrating front end and back end for POST and PUT request.
+    🔴 Uploading image to the server and downloading image from the server.
+    🔴 Faced challenge for @OnetoOne mapping for duplicate datas.
+    🔴 Faced challenge in writing nested JPQL query.
+
+
+**Hardest Errors** 
+
+    🚩 Internal server error for java persisitance exception for date - Solved it by converting the date format.
+    🚩 Internal server error hibernate nested exception - Solved it by reworking on the modal mapping.
+    🚩 Internal server error for delete nested entities - Solved it by adding cascade type ALL.
+    🚩 Altering the entity and updating it.
+    🚩 Handling logic for more than 1 row found for one to one mapping.
+
+
+**Repository Link**
+
+    🔗 Repo link -
+
+
+**MySQL Schema**
+
+    👉 Image of schema 
+![MySQL Workbench 01-12-2023 15_22_15](https://github.com/DevisettyBhargavaKS/Furniture-Backend/assets/145537696/3635a9ab-cbef-47a7-939c-e2e476e21869)
+
+
+Demo Video Url
+  
+    🔗 url of demo video
+  
+  
+  
+  
